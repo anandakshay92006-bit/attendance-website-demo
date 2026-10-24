@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BME Attendance System</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-icon">
+          <i class="fa-solid fa-clipboard-user"></i>
+        </span>
+
+        <div>
+          <h1>BME Attendance</h1>
+          <p>
+            Student attendance portal(group-8 AKSHAY\SAYANIK\KANISH\DEVASHISH)
+          </p>
+        </div>
+      </div>
+
+      <span class="header-tag">
+        <i class="fa-solid fa-shield-halved"></i>
+        Student portal
+      </span>
+    </header>
+
+    <!-- Main content -->
+    <main class="page-content">
+      <!-- Welcome section -->
+      <section class="welcome">
+        <p class="eyebrow">WELCOME</p>
+
+        <h2>Make attendance simple.</h2>
+
+        <p class="welcome-copy">
+          Record your attendance with your name, roll number and a live photo.
+        </p>
+      </section>
+
+      <!-- Dashboard cards -->
+      <section class="dashboard" aria-label="Attendance actions">
+        <!-- Mark attendance card -->
+        <article class="action-card">
+          <div class="card-icon purple">
+            <i class="fa-solid fa-camera"></i>
+          </div>
+
+          <h3>Mark attendance</h3>
+
+          <p>Enter your details and take a photo to record your presence.</p>
+
+          <div class="codeGenerater">
+            <button id="generateButton" class="primary-button" type="button">
+              <i class="fa-solid fa-user-check"></i>
+              Mark attendance
+            </button>
+          </div>
+        </article>
+
+        <!-- Attendance sheet card -->
+        <article class="action-card">
+          <div class="card-icon blue">
+            <i class="fa-solid fa-table-list"></i>
+          </div>
+
+          <h3>Attendance sheet</h3>
+
+          <p>View recorded attendance and print or save the report as a PDF.</p>
+
+          <div class="sheet-action">
+            <button
+              id="attendenceSheetButton"
+              class="secondary-button"
+              type="button"
+            >
+              <i class="fa-solid fa-file-lines"></i>
+              Open attendance sheet
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!-- Information notice -->
+      <section class="notice">
+        <i class="fa-solid fa-circle-info"></i>
+
+        <p>
+          <strong>Prototype note:</strong>
+          This demo stores attendance in this browser only. Photo matching flags
+          identical or similar images; it does not identify the same person in
+          different photos.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        BME Project · Attendance Management Demo (group-8
+        AKSHAY\SAYANIK\KANISH\DEVASHISH)
+      </p>
+    </footer>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
